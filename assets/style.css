@@ -20,8 +20,14 @@ body {
 
 .nav {
     padding-top: 4%;
+    bottom: 1;
+    border-bottom: 1px solid rgb(0, 218, 0);
+    
 }
-
+.navbar-nav {
+    margin-left: auto; 
+    border-bottom: 1px solid rgb(0, 218, 0);
+}
 .texto_sobrenos {
     padding-left: 15%;
     padding-right: 15%;
@@ -44,6 +50,7 @@ footer {
     position: relative; 
     bottom: 0;
     width: 100%;
+    border-top: 2px solid rgb(0, 218, 0);
 }
 
 .card:hover {
@@ -66,6 +73,8 @@ footer {
 .card {
     width: 14rem;
     margin: 10px auto; 
+    border: solid 1px rgb(0, 218, 0);
+    border-radius: 2%;
 }
 
 .card-img-top {
@@ -74,9 +83,10 @@ footer {
 
 
 .login-container {
-    background-color: #343a40;
+    background-color: black;
     color: white;
     border-radius: 10px;
+    border: solid rgb(0, 218, 0);
     padding: 30px;
     margin: 30px auto;
     width: 300px;
@@ -98,4 +108,5 @@ footer {
 .custom-btn:hover {
     background-color: #2c2c2c; /* Cor de fundo ao passar o mouse */
 }
+
 
