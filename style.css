@@ -1,0 +1,112 @@
+/* Configurações básicas */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+
+.container {
+    padding-top: 1%;
+}
+
+.nav {
+    padding-top: 4%;
+    bottom: 1;
+    border-bottom: 1px solid rgb(0, 218, 0);
+    
+}
+.navbar-nav {
+    margin-left: auto; 
+    border-bottom: 1px solid rgb(0, 218, 0);
+}
+.texto_sobrenos {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+}
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+
+footer {
+    background-color: black; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid rgb(0, 218, 0);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.logo {
+    margin-top: 50px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.slogan {
+    font-size: 20px;
+    margin: 20px 0;
+}
+.card {
+    width: 14rem;
+    margin: 10px auto; 
+    border: solid 1px rgb(0, 218, 0);
+    border-radius: 2%;
+}
+
+.card-img-top {
+    padding: 15%;
+}
+
+
+.login-container {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: solid rgb(0, 218, 0);
+    padding: 30px;
+    margin: 30px auto;
+    width: 300px;
+}
+
+.login-container input {
+    margin-bottom: 10px;
+}
+
+.login-container button {
+    margin-bottom: 10px;
+}
+
+.custom-btn {
+    background-color: black;
+    color: white; /* Cor do texto */
+}
+
+.custom-btn:hover {
+    background-color: #2c2c2c; /* Cor de fundo ao passar o mouse */
+}
+
+
