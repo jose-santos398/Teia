@@ -1,4 +1,6 @@
 # Projeto TEIA
+https://jose-santos398.github.io/Teia/
+
 Projeto de website para o Projeto Integrador, Fatec Diadema.
 
 MEMBROS DO GRUPO: 
