@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEIA - Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/CSS/login.css">
     <script src="login.js"></script>
 
-    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:  black;">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
         <a class="navbar-brand" href="#">
-          <img src="assets/logo2.png" alt="Bootstrap" width="35" height="35">
+          <img src="assets/img/logo2.png" alt="Logo" width="35" height="35">
         </a>  
           <a class="navbar-brand" href="#">Projeto Teia</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="index.html">Cursos<span class="sr-only"></span></a>
               </li>
@@ -34,14 +34,13 @@
             </ul>
           </div>
         </nav>
-        
 </head>
 
 <body>
 
     <!-- Logo -->
     <div class="logo">
-        <img src="assets/logo4.png" alt="Logo TEIA">
+        <img src="assets/img/logo4.png" alt="Logo TEIA">
         <h1>TEIA</h1>
     </div>
 
@@ -50,7 +49,6 @@
         <p>Explore cursos gratuitos e amplie seu conhecimento em Tecnologia da Informação.</p>
     </div>
 
-    <!-- Login Form -->
     <div class="login-container">
         <form>
             <div class="mb-3">
@@ -59,19 +57,19 @@
             <div class="mb-3">
                 <input id="inputSenha" type="password" class="form-control" placeholder="Senha" required>
             </div>
-            <button type="submit" class="btn btn-light w-100" onclick=logar() onl>Entrar</button>
+            <button type="submit" class="btn btn-light w-100" onclick="logar()">Entrar</button>
         </form>
-        <button onclick=criarconta() class="btn btn-secondary w-100 mt-2">Criar conta</button>
+        <div class="text-center mt-3">
+            <a href="cadastro.html" class="link-cadastro">Não tem uma conta? Crie uma agora!</a>
+        </div>
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 TEIA - Acesso gratuito ao aprendizado de TI!</p>
-    </footer>
+    <footer class="footer text-center mt-5">
+      <p>&copy; 2024 TEIA - Inovando para um futuro brilhante!</p>
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 
 </html>
