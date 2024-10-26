@@ -1,0 +1,111 @@
+body {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 38, 255, 0.9)); /* Degradê suave entre preto e azul escuro */
+    color: rgb(100, 86, 255);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9); /* Navbar com fundo quase preto */
+    color: rgb(26, 64, 255);
+}
+
+.navbar-brand img {
+    width: 35px;
+    height: 35px;
+}
+
+.navbar-nav {
+    margin-left: auto; /* Isso alinha os itens à direita */
+}
+
+.navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px; /* Espessura da borda */
+    background: transparent; /* Cor inicial da borda */
+    transition: background 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff; /* Altera a cor do texto ao passar o mouse */
+}
+
+.navbar-nav .nav-link:hover::after {
+    background: #fff; /* Cor da borda ao passar o mouse */
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.card {
+    background-color: rgba(30, 30, 30, 0.8); /* Card com fundo escuro e leve transparência */
+    border: none;
+    transition: transform 0.3s;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body {
+    padding: 15px;
+    top: 15px; 
+}
+
+.card-img-top {
+    display: auto; /* Necessário para margens funcionarem */
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    color: rgb(255, 255, 255); /* Títulos brancos para destaque */
+}
+
+.card-text {
+    color: #ddd; /* Texto claro para contraste */
+}
+
+.custom-btn {
+    background-color: #69b4ff;
+    color: black;
+    border: 2px solid black; /* Detalhes em azul */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: rgb(0, 171, 218);
+    color: black;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.9); /* Rodapé quase preto */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
