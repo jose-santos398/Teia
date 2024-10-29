@@ -45,13 +45,16 @@ body {
 }
 
 .footer {
-    background-color: #000; /* Rodapé escuro */
+    background-color: #000;
     color: white;
     padding: 20px 0;
-    position: relative;
+    position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
+    z-index: 1000;
 }
+
 
 .footer p {
     margin: 0;
