@@ -1,6 +1,6 @@
 body {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 38, 255, 0.9)); /* Degradê suave entre preto e azul escuro */
-    color: rgb(100, 86, 255);
+    color: rgb(255, 255, 255); /* Cor do texto padrão para branco */
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@ body {
 
 .navbar {
     background-color: rgba(0, 0, 0, 0.9); /* Navbar com fundo quase preto */
-    color: rgb(26, 64, 255);
+    color: rgb(255, 255, 255); /* Cor do texto da navbar */
 }
 
 .navbar-brand img {
@@ -21,7 +21,7 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255) !important; /* Texto do link em branco */
     position: relative;
     transition: color 0.3s ease;
 }
@@ -81,24 +81,24 @@ body {
 }
 
 .card-text {
-    color: #ddd; /* Texto claro para contraste */
+    color: rgb(220, 220, 220); /* Texto claro para contraste */
 }
 
 .custom-btn {
     background-color: #69b4ff;
-    color: black;
+    color: black; /* Cor do texto do botão */
     border: 2px solid black; /* Detalhes em azul */
     transition: background-color 0.3s, color 0.3s;
 }
 
 .custom-btn:hover {
     background-color: rgb(0, 171, 218);
-    color: black;
+    color: black; /* Cor do texto do botão ao passar o mouse */
 }
 
 .footer {
     background-color: rgba(0, 0, 0, 0.9); /* Rodapé quase preto */
-    color: white;
+    color: white; /* Cor do texto do rodapé */
     text-align: center;
     padding: 15px 0;
     position: relative;
