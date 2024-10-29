@@ -131,11 +131,12 @@ h1 {
 /* Estilos do footer */
 .footer {
     text-align: center;
-    margin-top: 40px;
     padding: 10px 0;
     background-color: #000000; /* Azul marinho brilhante */
     color: white;
-    position: relative;
+    position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
+    z-index: 1000;
 }
