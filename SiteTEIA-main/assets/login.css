@@ -1,0 +1,160 @@
+/* Estilos gerais */
+html, body {
+    height: 100%; /* Para garantir que o body preencha a altura total */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 38, 255, 0.9)); /* Degradê de azul marinho para preto */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.navbar {
+    background-color: #000000; /* Azul marinho brilhante */
+    color: #fff;
+    padding: 10px; /* Adiciona um pouco de padding */
+}
+
+.navbar-brand img {
+    width: 35px;
+    height: 35px;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px; /* Espessura da borda */
+    background: transparent; /* Cor inicial da borda */
+    transition: background 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff; /* Altera a cor do texto ao passar o mouse */
+}
+
+.navbar-nav .nav-link:hover::after {
+    background: #fff; /* Cor da borda ao passar o mouse */
+}
+
+.logo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #fff; /* Altera a cor do título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
+}
+
+.slogan {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    color: #fff; /* Altera a cor da slogan */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+}
+
+/* Estilos do container de login */
+.login-container {
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+    transition: transform 0.3s; /* Adiciona transição */
+}
+
+.login-container:hover {
+    transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
+}
+
+.login-container form {
+    margin-bottom: 20px;
+}
+
+/* Ajuste no container para evitar sobreposição do footer */
+.container {
+    flex: 1; /* Permitir que a área do conteúdo cresça */
+    margin-bottom: 70px; /* Ajuste este valor conforme necessário */
+    padding-bottom: 60px; /* Para garantir que não sobreponha o footer */
+}
+
+/* Estilos dos inputs */
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    padding: 10px; /* Adiciona padding */
+}
+
+.form-control:focus {
+    border-color: #0056b3; /* Azul marinho brilhante */
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+/* Estilos dos botões */
+.btn {
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+    padding: 10px 15px; /* Adiciona padding */
+}
+
+.btn-light {
+    background-color: #63b1ff;
+    color: #333;
+}
+
+.btn-light:hover {
+    background-color: #69b4ff;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+.link-cadastro {
+    color: #0056b3; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.link-cadastro:hover {
+    text-decoration: underline;
+}
+
+/* Estilos do footer */
+.footer {
+    text-align: center;
+    padding: 15px 0; /* Adiciona mais padding */
+    background-color: #000000; 
+    color: white;
+}
+
+.footer p {
+    margin: 0;
+}

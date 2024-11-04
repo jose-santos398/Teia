@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEIA - Cadastro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/cadastro.css">
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="assets/logo2.png" alt="Logo">
+            Projeto Teia
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto"> <!-- ms-auto para alinhar à direita -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="empregabilidade.html">Empregabilidade</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro.html">Cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobrenos.html">Quem Somos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container d-flex justify-content-between align-items-start mt-4">
+        <div class="logo me-5 text-center">
+            <img src="assets/logo4.png" alt="Logo TEIA" class="img-fluid" style="max-width: 200px;">
+            <h1 style="color: rgb(255, 255, 255); font-size: 2.5rem;">TEIA</h1>
+            <div class="slogan">
+                <p style="font-size: 1.2rem; color: white; text-align: center;">
+                    Descubra uma variedade de cursos gratuitos que irão expandir seu conhecimento em Tecnologia da Informação.<br>
+                    Aprofunde-se em habilidades essenciais, desde programação até gestão de projetos,<br>
+                    e prepare-se para se destacar no mercado de trabalho.<br>
+                    Junte-se à comunidade TEIA e transforme sua carreira hoje mesmo!
+                </p>
+            </div>
+        </div>
+
+        <div class="login-container">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Criar Conta</h5>
+                    <form>
+                        <div></div>
+                        <div class="mb-3">
+                            <input id="inputNome" type="text" class="form-control" placeholder="Nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <input id="inputEmail" type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input id="inputTelefone" type="tel" class="form-control" placeholder="Telefone" required>
+                        </div>
+                        <div class="mb-3">
+                            <input id="inputSenha" type="password" class="form-control" placeholder="Senha" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" onclick="criarconta()">Cadastrar</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <a href="login.html" class="link-cadastro">Já possui conta? Faça o login!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="external-container"></div>
+
+    <footer class="footer text-center mt-5">
+        <p>&copy; 2024 TEIA - Inovando para um futuro brilhante!</p>
+        <p>Contato: Projeto_Teia@fatec.sp.gov.br | Telefone: (11) 4002-8922</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
