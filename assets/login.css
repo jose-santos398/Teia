@@ -1,15 +1,21 @@
 /* Estilos gerais */
+html, body {
+    height: 100%; /* Para garantir que o body preencha a altura total */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    margin: 0;
+}
+
 body {
-    background: linear-gradient(to right, #001F3F, #000000); /* Degradê de azul marinho para preto */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 38, 255, 0.9)); /* Degradê de azul marinho para preto */
     font-family: 'Arial', sans-serif;
     color: #333;
-    margin: 0;
-    padding: 0;
 }
 
 .navbar {
     background-color: #000000; /* Azul marinho brilhante */
     color: #fff;
+    padding: 10px; /* Adiciona um pouco de padding */
 }
 
 .navbar-brand img {
@@ -25,7 +31,6 @@ body {
 
 .navbar-nav .nav-link::after {
     content: '';
-    position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
@@ -74,11 +79,23 @@ h1 {
     padding: 20px;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+    transition: transform 0.3s; /* Adiciona transição */
+}
+
+.login-container:hover {
+    transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
 }
 
 .login-container form {
     margin-bottom: 20px;
+}
+
+/* Ajuste no container para evitar sobreposição do footer */
+.container {
+    flex: 1; /* Permitir que a área do conteúdo cresça */
+    margin-bottom: 70px; /* Ajuste este valor conforme necessário */
+    padding-bottom: 60px; /* Para garantir que não sobreponha o footer */
 }
 
 /* Estilos dos inputs */
@@ -86,6 +103,7 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 4px;
     transition: border-color 0.3s;
+    padding: 10px; /* Adiciona padding */
 }
 
 .form-control:focus {
@@ -97,6 +115,7 @@ h1 {
 .btn {
     border-radius: 4px;
     transition: background-color 0.3s, transform 0.2s;
+    padding: 10px 15px; /* Adiciona padding */
 }
 
 .btn-light {
@@ -131,12 +150,11 @@ h1 {
 /* Estilos do footer */
 .footer {
     text-align: center;
-    padding: 10px 0;
-    background-color: #000000; /* Azul marinho brilhante */
+    padding: 15px 0; /* Adiciona mais padding */
+    background-color: #000000; 
     color: white;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+}
+
+.footer p {
+    margin: 0;
 }

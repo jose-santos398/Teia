@@ -9,31 +9,34 @@
     <link rel="stylesheet" href="assets/login.css">
     <script src="login.js"></script>
 
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">
-          <img src="assets/logo2.png" alt="Logo" width="35" height="35">
-        </a>  
-          <a class="navbar-brand" href="#">Projeto Teia</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <img src="assets/logo2.png" alt="Logo">
+            Projeto Teia
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Cursos<span class="sr-only"></span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Empregabilidade</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Login/Cadastro</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sobrenos.html">Quem Somos</a>
-              </li>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto"> <!-- ms-auto para alinhar à direita -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="empregabilidade.html">Empregabilidade</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro.html">Cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobrenos.html">Quem Somos</a>
+                </li>
             </ul>
-          </div>
-        </nav>
+        </div>
+    </nav>
 </head>
 
 <body>
@@ -49,24 +52,27 @@
         <p>Explore cursos gratuitos e amplie seu conhecimento em Tecnologia da Informação.</p>
     </div>
 
-    <div class="login-container">
-        <form>
-            <div class="mb-3">
-                <input id="inputEmail" type="email" class="form-control" placeholder="Email" required>
+    <div class="container">
+        <div class="login-container">
+            <form>
+                <div class="mb-3">
+                    <input id="inputEmail" type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="mb-3">
+                    <input id="inputSenha" type="password" class="form-control" placeholder="Senha" required>
+                </div>
+                <button type="submit" class="btn btn-light w-100" onclick="logar()">Entrar</button>
+            </form>
+            <div class="text-center mt-3">
+                <a href="cadastro.html" class="link-cadastro">Não tem uma conta? Crie uma agora!</a>
             </div>
-            <div class="mb-3">
-                <input id="inputSenha" type="password" class="form-control" placeholder="Senha" required>
-            </div>
-            <button type="submit" class="btn btn-light w-100" onclick="logar()">Entrar</button>
-        </form>
-        <div class="text-center mt-3">
-            <a href="cadastro.html" class="link-cadastro">Não tem uma conta? Crie uma agora!</a>
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="footer text-center mt-5">
       <p>&copy; 2024 TEIA - Inovando para um futuro brilhante!</p>
+      <p>Contato: Projeto_Teia@fatec.sp.gov.br | Telefone: (11) 4002-8922</p>
   </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

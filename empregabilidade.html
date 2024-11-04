@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/CSS/index.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
 
     <!-- Estilo customizado -->
     <style>
@@ -104,14 +105,19 @@
             line-height: 1.6;
         }
         /* Rodapé fixo */
-        footer {
-            background-color: black; 
-            color: white;
+        .footer {
             text-align: center;
-            padding: 10px;
-            position: relative; 
+            padding: 10px 0;
+            background-color: #000000; 
+            color: white;
+            position: fixed;
             bottom: 0;
+            left: 0;
             width: 100%;
+            z-index: 1000;
+        }
+        .external-container{
+            padding-bottom: 400px;
         }
     </style>
 </head>
@@ -121,19 +127,19 @@
     
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">
-            <img src="assets/logo2.png" alt="Bootstrap" width="35" height="35">
-        </a>  
-        <a class="navbar-brand" href="#">Projeto Teia</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <img src="assets/logo2.png" alt="Logo">
+            Projeto Teia
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto"> <!-- ms-auto para alinhar à direita -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Cursos<span class="sr-only"></span></a>
+                    <a class="nav-link" href="index.html">Cursos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Empregabilidade</a>
+                    <a class="nav-link" href="empregabilidade.html">Empregabilidade</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="login.html">Login</a>
@@ -142,40 +148,31 @@
                     <a class="nav-link" href="cadastro.html">Cadastro</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Quem Somos</a>
+                    <a class="nav-link" href="sobrenos.html">Quem Somos</a>
                 </li>
             </ul>
         </div>
     </nav>
+    <div class="external-container">
+        <div class="container">
+            <!-- Seção sobre nós -->
+            <div class="texto_sobrenos">
+                <h3>Empregabilidade</h3>
 
-    <div class="container">
-        <!-- Seção sobre nós -->
-        <div class="texto_sobrenos">
-            <h3>Sobre nós:</h3>
-            <h5>
-                <p>No Projeto Teia, acreditamos que a educação em tecnologia deve ser acessível para todos. Nosso compromisso é quebrar barreiras, oferecendo cursos de qualidade que atendam a uma diversidade de públicos. Trabalhamos para criar um ambiente inclusivo onde qualquer pessoa, independentemente de suas limitações físicas, econômicas ou sociais, possa aprender e crescer na área de TI.</p>
+                <h5>
+                    <p>Essa página está sob construção no momento. Volte futuramente para verificar!</p>
+                </h5>
 
-                <p>Priorizamos a acessibilidade em nossos cursos, adaptando nosso conteúdo e plataformas para garantir que pessoas com deficiência também possam trilhar sua jornada de aprendizado. Além disso, a inclusão e a diversidade são pilares centrais para nós, pois acreditamos que a tecnologia deve refletir as vozes e talentos de todas as partes da sociedade.</p>
-
-                <p>Nosso lema é: "Educação para todos, inovação sem fronteiras". Com isso, buscamos oferecer oportunidades que permitam o desenvolvimento de habilidades técnicas, promovendo a empregabilidade e o sucesso de cada aluno. Juntos, estamos criando um futuro onde a tecnologia serve a todos de maneira igual.</p>
-            </h5>
-
-            <h6 class="membros">
-                MEMBROS DO GRUPO:<br>
-                Cleverson Amorim de Lima,<br>
-                Italo Araújo Teixeira,<br>
-                José Luiz Souza Santos,<br>
-                Lucas Willians de Souza Magueta,<br>
-                Miguel de Souza Alves.
-            </h6>
+            </div>
         </div>
     </div>
-
+    
     <!-- Rodapé -->
     <footer class="footer text-center mt-5">
         <p>&copy; 2024 TEIA - Inovando para um futuro brilhante!</p>
-        <p>Contato: Projeto_TEia@fatec.sp.gov.br | Telefone: (11) 4002-8922</p>
+        <p>Contato: Projeto_Teia@fatec.sp.gov.br | Telefone: (11) 4002-8922</p>
     </footer>
+
 
     <!-- JavaScript do Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

@@ -5,12 +5,21 @@ function criarconta() {
     var senharecebida = document.getElementById("inputSenha").value;
 
     let contas = JSON.parse(localStorage.getItem('contas')) || [];
-    contas.push({email: emailrecebido, senha: senharecebida});
-    localStorage.setItem('contas', JSON.stringify(contas));
-    
-    console.log("Conta criada:", { emailrecebido, senharecebida });
-    alert("Sua conta foi criada com sucesso!");
-    window.location.replace("index.html");
+
+    const emailExists = contas.some(conta => conta.email === emailrecebido);
+    if (emailExists) {
+        alert("Este email já está sendo utilizado. Por favor, escolha outro.");
+        location.reload()
+        return;
+    }
+    else{
+        contas.push({email: emailrecebido, senha: senharecebida});
+        localStorage.setItem('contas', JSON.stringify(contas));
+        
+        console.log("Conta criada:", { emailrecebido, senharecebida });
+        alert("Sua conta foi criada com sucesso!");
+        window.location.replace("index.html");
+    }
 }
 
 function logar() {
